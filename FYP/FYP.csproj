@@ -89,10 +89,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="91b674b96a3cc7b5c542e0bcd432d52e.jpg" />
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf" />
     <Content Include="ChooseTemplate.aspx" />
     <Content Include="DesignReport.aspx" />
+    <Content Include="GenerateQuery.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Tunku-Abdul-Rahman-University-College-TARC.png" />
     <Content Include="Web.config" />
@@ -113,6 +112,13 @@
     <Compile Include="DesignReport.aspx.designer.cs">
       <DependentUpon>DesignReport.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GenerateQuery.aspx.cs">
+      <DependentUpon>GenerateQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerateQuery.aspx.designer.cs">
+      <DependentUpon>GenerateQuery.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -124,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

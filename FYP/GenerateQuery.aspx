@@ -9,6 +9,21 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <table>
+                <tr>
+                    <td>SQL Query</td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:TextBox ID="generatedSQLTextBox" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </table>
         </div>
     </form>
 </body>
