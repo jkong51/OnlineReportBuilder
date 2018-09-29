@@ -91,12 +91,16 @@
     <Content Include="91b674b96a3cc7b5c542e0bcd432d52e.jpg" />
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf" />
+    <Content Include="App_Data\OrderDB.mdf" />
+    <Content Include="App_Data\OrderDB_log.ldf" />
     <Content Include="ChooseTemplate.aspx" />
     <Content Include="DesignReport.aspx" />
     <Content Include="GenerateQuery.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Tunku-Abdul-Rahman-University-College-TARC.png" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChooseTemplate.aspx.cs">

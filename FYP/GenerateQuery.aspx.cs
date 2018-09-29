@@ -1,9 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace FYP
 {
@@ -11,7 +13,10 @@ namespace FYP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (IsPostBack) {
+                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DB1ConnectionString"].ConnectionString);
+                conn.Open();
+            }
         }
     }
 }
