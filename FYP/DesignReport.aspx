@@ -74,6 +74,7 @@
     <title>I-Report Builder</title>
 </head>
 <body>
+    <form id="form1" runat="server">
     <div id="sidebar">
     <table class="border">
         <tr class="border">
@@ -84,7 +85,34 @@
         </tr>
         <tr class="border">
             <td style="padding-top:15px;vertical-align:top" colspan="2">
-                Header & Footer
+                Header & Footer <br />
+                <table>
+                    <tr>
+                        <td>
+                            <asp:Button ID="Button1" runat="server" Text="A" />
+                        </td>
+                        <td>Text</td>
+                        <td><asp:Button ID="Button2" runat="server" Text="A" /></td>
+                        <td>Image</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <table>
+                                <tr>
+                                    <td colspan="3">Text Decoration</td>
+                                </tr>
+                                <tr>
+                                    <td><asp:Button ID="Button3" runat="server" Text="A" /></td>
+                                    <td><asp:Button ID="Button4" runat="server" Text="A" /></td>
+                                    <td><asp:Button ID="Button5" runat="server" Text="A" /></td>
+                                </tr>
+                            </table>
+
+                        </td>
+                        <td><asp:Button ID="Button6" runat="server" Text="A" /></td>
+                        <td>Date</td>
+                    </tr>
+                </table>
             </td>
         </tr>
         <tr class="border">
@@ -104,8 +132,11 @@
 
     </table>
         </div>
+        </form>
     <div style="padding:50px;padding-left:300px">
-        <page size="A4"></page>
+        <page size="A4">
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        </page>
     </div>
 </body>
 
